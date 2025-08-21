@@ -18,7 +18,7 @@ Long description of module's purpose
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','mail',],
+    'depends': ['base','mail','account', 'stock', 'hr',],
 
     # always loaded
     'data': [
@@ -28,6 +28,7 @@ Long description of module's purpose
         'views/templates.xml',
         'views/patient.xml',
         'views/doctor.xml',
+        'views/doctor_appointment.xml',
     ],
     # only loaded in demonstration mode
     'demo': [ ],
