@@ -59,13 +59,11 @@
 
                             <page string="Medical Information">
                                 <group>
-                                    <field name="medical_history" nolabel="1" placeholder="Medical History..."/>
-                                </group>
-                                <group>
-                                    <field name="allergies" nolabel="1" placeholder="Allergies..."/>
-                                </group>
-                                <group>
-<!--                                    <field name="current_medications" nolabel="1" placeholder="Current Medications..."/>-->
+                                    <field name="medical_history"/>
+
+                                    <field name="allergies"/>
+
+
                                 </group>
                             </page>
 
@@ -81,32 +79,32 @@
                             </page>
 
                             <page string="Medical Records">
-<!--                                <field name="medical_record_ids">-->
-<!--                                    <tree>-->
-<!--                                        <field name="name"/>-->
-<!--                                        <field name="doctor_id"/>-->
-<!--                                        <field name="visit_date"/>-->
-<!--                                        <field name="diagnosis"/>-->
-<!--                                    </tree>-->
-<!--                                </field>-->
+                                <field name="medical_record_ids">
+                                    <tree>
+                                        <field name="name"/>
+                                        <field name="doctor_id"/>
+                                        <field name="visit_date"/>
+                                        <field name="diagnosis"/>
+                                    </tree>
+                                </field>
                             </page>
 
                             <page string="Bills">
-<!--                                <field name="bill_ids">-->
-<!--                                    <tree>-->
-<!--                                        <field name="name"/>-->
-<!--                                        <field name="bill_date"/>-->
-<!--                                        <field name="total_amount"/>-->
-<!--                                        <field name="state"/>-->
-<!--                                    </tree>-->
-<!--                                </field>-->
+                                <field name="bill_ids">
+                                    <tree>
+                                        <field name="name"/>
+                                        <field name="bill_date"/>
+                                        <field name="total_amount"/>
+                                        <field name="state"/>
+                                    </tree>
+                                </field>
                             </page>
                         </notebook>
                     </sheet>
                     <div class="oe_chatter">
-<!--                        <field name="message_follower_ids"/>-->
-<!--                        <field name="activity_ids"/>-->
-<!--                        <field name="message_ids"/>-->
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
                     </div>
                 </form>
             </field>

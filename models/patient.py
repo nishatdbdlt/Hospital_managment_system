@@ -38,8 +38,8 @@ class HospitalPatient(models.Model):
     insurance_number=fields.Char(string='insurance number')
     # relation
     appointment_ids=fields.One2many('hospital.appointment','patient_id',string='Appointment')
-    # medical_record_ids=fields.One2many('hospital.medical.record','patient_id',string='medical record')
-    # bil_ids=fields.One2many('hospital.bill','patient_id',string='hospital bill')
+    medical_record_ids=fields.One2many('hospital.medical.record','patient_id',string='medical record')
+    bill_ids = fields.One2many('hospital.bill', 'patient_id', string='Hospital Bill')
     state = fields.Selection([
         ('active', 'Active'),
         ('inactive', 'Inactive')

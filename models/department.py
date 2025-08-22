@@ -11,6 +11,6 @@ class HospitalDepartment(models.Model):
 
     # Relations
     doctor_ids = fields.One2many('hospital.doctor', 'department_id', string='Doctors')
-    # room_ids = fields.One2many('hospital.room', 'department_id', string='Rooms')
+    room_ids = fields.One2many('hospital.room', 'department_id', string='Rooms')
 
     active = fields.Boolean(string='Active', default=True)

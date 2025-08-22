@@ -6,3 +6,6 @@ from . import doctor
 from . import hospital_appointment
 from . import  department
 from . import hospital_room
+from . import hospital_medicine
+from . import medical_record
+from . import  hospital_bill

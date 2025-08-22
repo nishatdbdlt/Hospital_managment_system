@@ -31,6 +31,9 @@ Long description of module's purpose
         'views/doctor_appointment.xml',
         'views/department.xml',
         'views/hospital_room.xml',
+        'views/hospital_medicine.xml',
+        'views/medical_report.xml',
+        'views/hospital_bill.xml',
     ],
     # only loaded in demonstration mode
     'demo': [ ],
