@@ -5,3 +5,6 @@ access_hospital_patient_manager,hospital.patient manager,model_hospital_patient,
 
 access_hospital_doctor,hospital.doctor,model_hospital_doctor,,1,1,1,1
 access_hospital_appointment,hospital.appointment,model_hospital_appointment,,1,1,1,1
+
+
+access_hospital_department,hospital.department,model_hospital_department,base.group_user,1,1,1,1

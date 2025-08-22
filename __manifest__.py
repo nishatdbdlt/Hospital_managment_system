@@ -29,6 +29,7 @@ Long description of module's purpose
         'views/patient.xml',
         'views/doctor.xml',
         'views/doctor_appointment.xml',
+        'views/department.xml',
     ],
     # only loaded in demonstration mode
     'demo': [ ],

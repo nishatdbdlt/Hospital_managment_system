@@ -27,7 +27,7 @@ class HospitalDoctor(models.Model):
     consultation_fee = fields.Float(string='Consultation Fee')
 
     # Relations
-    # department_id = fields.Many2one('hospital.department', string='Department')
+    department_id = fields.Many2one('hospital.department', string='Department')
     appointment_ids = fields.One2many('hospital.appointment', 'doctor_id', string='Appointments')
 
     # Availability

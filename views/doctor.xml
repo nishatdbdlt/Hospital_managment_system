@@ -10,7 +10,7 @@
                     <field name="doctor_id"/>
                     <field name="name"/>
                     <field name="specialization"/>
-<!--                    <field name="department_id"/>-->
+                    <field name="department_id"/>
                     <field name="phone"/>
                     <field name="email"/>
                     <field name="consultation_fee"/>
@@ -38,7 +38,7 @@
                             <group>
                                 <field name="name"/>
                                 <field name="specialization"/>
-<!--                                <field name="department_id"/>-->
+                                <field name="department_id"/>
                                 <field name="qualification"/>
                                 <field name="experience_years"/>
                             </group>
@@ -91,7 +91,7 @@
                     <field name="name" string="Doctor Name" filter_domain="[('name','ilike',self)]"/>
                     <field name="doctor_id" string="Doctor ID"/>
                     <field name="specialization" string="Specialization"/>
-<!--                    <field name="department_id" string="Department"/>-->
+                    <field name="department_id" string="Department"/>
                     <separator/>
                     <filter string="Available" name="available" domain="[('state','=','available')]"/>
                     <filter string="Busy" name="busy" domain="[('state','=','busy')]"/>
@@ -138,13 +138,13 @@
                                         <field name="specialization"/>
                                     </div>
                                     <div>
-<!--                                        <field name="department_id"/>-->
+                                        <field name="department_id"/>
                                     </div>
                                     <div t-if="record.phone.raw_value">
                                         <i class="fa fa-phone"/> <field name="phone"/>
                                     </div>
                                     <div t-if="record.email.raw_value">
-                                        <i class="fa fa-envelope"/> <field name="email"/>
+                                        <i class="fa fa-envelope" title="email"/>
                                     </div>
                                     <div class="oe_kanban_bottom_right">
                                         <field name="state" widget="label_selection" options="{'classes': {'available': 'success', 'busy': 'warning', 'on_leave': 'danger'}}"/>
