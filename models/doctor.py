@@ -28,7 +28,7 @@ class HospitalDoctor(models.Model):
 
     # Relations
     # department_id = fields.Many2one('hospital.department', string='Department')
-    # appointment_ids = fields.One2many('hospital.appointment', 'doctor_id', string='Appointments')
+    appointment_ids = fields.One2many('hospital.appointment', 'doctor_id', string='Appointments')
 
     # Availability
     available_days = fields.Selection([

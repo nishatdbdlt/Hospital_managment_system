@@ -9,7 +9,7 @@ from datetime import date
 class HospitalPatient(models.Model):
     _name='hospital.patient'
     _description = 'Hospital patient'
-    # _inherit = ['mail.thread','mail.activity.mixin']
+    _inherit = ['mail.thread','mail.activity.mixin']
     _order = 'create_date desc'
 
     name=fields.Char(string='patient name',required=True,tracking=True)
@@ -37,7 +37,7 @@ class HospitalPatient(models.Model):
     current_medication=fields.Text(string="Current Medication")
     insurance_number=fields.Char(string='insurance number')
     # relation
-    # appointment_ids=fields.One2many('hospital.appointment','patient_id',string='Appointment')
+    appointment_ids=fields.One2many('hospital.appointment','patient_id',string='Appointment')
     # medical_record_ids=fields.One2many('hospital.medical.record','patient_id',string='medical record')
     # bil_ids=fields.One2many('hospital.bill','patient_id',string='hospital bill')
     state = fields.Selection([

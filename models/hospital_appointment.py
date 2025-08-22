@@ -13,7 +13,7 @@ class HospitalAppointment(models.Model):
                        default=lambda self: _('NEW'))
     patient_id = fields.Many2one('hospital.patient', string='Patient', required=True, tracking=True)
     doctor_id = fields.Many2one('hospital.doctor', string='Doctor', required=True, tracking=True)
-    department_id = fields.Many2one('hospital.department', string='Department', tracking=True)
+    # department_id = fields.Many2one('hospital.department', string='Department', tracking=True)
     appointment_date = fields.Datetime(string='Appointment Date', default=fields.Datetime.now, tracking=True)
     duration = fields.Float(string='Duration (Hours)', default=1.0)
     reason = fields.Text(string="Reason")
@@ -60,12 +60,12 @@ class HospitalAppointment(models.Model):
             else:
                 rec.consultation_fee = 0.0
 
-    @api.onchange('doctor_id')
-    def _onchange_doctor_id(self):
-        if self.doctor_id:
-            # Set department based on doctor's department
-            if hasattr(self.doctor_id, 'department_id'):
-                self.department_id = self.doctor_id.department_id
+    # @api.onchange('doctor_id')
+    # def _onchange_doctor_id(self):
+    #     if self.doctor_id:
+    #         # Set department based on doctor's department
+    #         if hasattr(self.doctor_id, 'department_id'):
+    #             self.department_id = self.doctor_id.department_id
 
     @api.constrains('appointment_date')
     def _check_appointment_date(self):

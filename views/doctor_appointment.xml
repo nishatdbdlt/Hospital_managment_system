@@ -28,7 +28,7 @@
                             <field name="name" readonly="1"/>
                             <field name="patient_id"/>
                             <field name="doctor_id"/>
-                            <field name="department_id"/>
+<!--                            <field name="department_id"/>-->
                             <field name="appointment_date"/>
                             <field name="duration"/>
 <!--                            <field name="consultation_fee"/>-->
