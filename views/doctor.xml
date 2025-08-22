@@ -61,15 +61,15 @@
                         </group>
                         <notebook>
                             <page string="Appointments">
-<!--                                <field name="appointment_ids">-->
-<!--                                    <tree string="Appointments" editable="bottom">-->
-<!--                                        <field name="name"/>-->
-<!--                                        <field name="patient_id"/>-->
-<!--                                        <field name="appointment_date"/>-->
+                                <field name="appointment_ids">
+                                    <tree string="Appointments" editable="bottom">
+                                        <field name="name"/>
+                                        <field name="patient_id"/>
+                                        <field name="appointment_date"/>
 <!--                                        <field name="appointment_time"/>-->
-<!--                                        <field name="state"/>-->
-<!--                                    </tree>-->
-<!--                                </field>-->
+                                        <field name="state"/>
+                                    </tree>
+                                </field>
                             </page>
                         </notebook>
                     </sheet>
@@ -97,11 +97,11 @@
                     <filter string="Busy" name="busy" domain="[('state','=','busy')]"/>
                     <filter string="On Leave" name="on_leave" domain="[('state','=','on_leave')]"/>
                     <separator/>
-<!--                    <group expand="0" string="Group By">-->
-<!--                        <filter string="Department" name="group_department" context="{'group_by':'department_id'}"/>-->
-<!--                        <filter string="Specialization" name="group_specialization" context="{'group_by':'specialization'}"/>-->
-<!--                        <filter string="Status" name="group_state" context="{'group_by':'state'}"/>-->
-<!--                    </group>-->
+                    <group expand="0" string="Group By">
+                        <filter string="Department" name="group_department" context="{'group_by':'department_id'}"/>
+                        <filter string="Specialization" name="group_specialization" context="{'group_by':'specialization'}"/>
+                        <filter string="Status" name="group_state" context="{'group_by':'state'}"/>
+                    </group>
                 </search>
             </field>
         </record>
@@ -116,7 +116,7 @@
                     <field name="name"/>
                     <field name="doctor_id"/>
                     <field name="specialization"/>
-<!--                    <field name="department_id"/>-->
+                    <field name="department_id"/>
                     <field name="phone"/>
                     <field name="email"/>
                     <field name="state"/>
@@ -141,7 +141,7 @@
                                         <field name="department_id"/>
                                     </div>
                                     <div t-if="record.phone.raw_value">
-                                        <i class="fa fa-phone"/> <field name="phone"/>
+                                        <field name="phone"/>
                                     </div>
                                     <div t-if="record.email.raw_value">
                                         <i class="fa fa-envelope" title="email"/>
