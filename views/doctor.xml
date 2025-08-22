@@ -52,13 +52,13 @@
                         <group string="Address">
                             <field name="address" nolabel="1"/>
                         </group>
-                        <group string="Availability">
+<!--                        <group string="Availability">-->
 <!--                            <group>-->
 <!--                                <field name="available_days" widget="many2many_tags"/>-->
 <!--                                <field name="available_time_from" widget="float_time"/>-->
 <!--                                <field name="available_time_to" widget="float_time"/>-->
 <!--                            </group>-->
-                        </group>
+<!--                        </group>-->
                         <notebook>
                             <page string="Appointments">
                                 <field name="appointment_ids">
